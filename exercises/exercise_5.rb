@@ -4,7 +4,7 @@ require_relative './exercise_2'
 require_relative './exercise_3'
 require_relative './exercise_4'
 
-puts "Exercise 5"
+puts "\nExercise 5"
 puts "----------"
 
 # calculates total revenue
@@ -16,4 +16,5 @@ puts "Total revenue: #{@total_revenue}"
 puts "Average revenue: #{@average_revenue}"
 
 # outputs number of stores that generate $1mil+
+print "Stores that have an annual revenue > $1mil: "
 puts Store.where("annual_revenue >= 1000000").count

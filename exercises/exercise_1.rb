@@ -1,6 +1,6 @@
 require_relative '../setup'
 
-puts "Exercise 1"
+puts "\nExercise 1"
 puts "----------"
 
 # creates 3 stores
@@ -26,4 +26,4 @@ Store.create({
   })
 
 # outputs the number of stores
-puts Store.count
+puts "Number of stores: #{Store.count}"

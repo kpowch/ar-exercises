@@ -5,7 +5,7 @@ require_relative './exercise_3'
 require_relative './exercise_4'
 require_relative './exercise_5'
 
-puts "Exercise 6"
+puts "\nExercise 6"
 puts "----------"
 
 # creates some employees and adds them to a store
@@ -40,4 +40,4 @@ puts "----------"
   )
 
 # outputs number of employees
-puts Employee.count
+puts "Number of employees: #{Employee.count}"

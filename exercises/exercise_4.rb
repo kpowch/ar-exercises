@@ -3,7 +3,7 @@ require_relative './exercise_1'
 require_relative './exercise_2'
 require_relative './exercise_3'
 
-puts "Exercise 4"
+puts "\nExercise 4"
 puts "----------"
 
 # creates 3 more stores
@@ -32,6 +32,7 @@ Store.create({
 @mens_stores = Store.where(mens_apparel: true)
 
 # outputs store name and annual_revenue
+puts "Stores that sell mens apparel"
 @mens_stores.each do |store|
   puts "#{store.name}, #{store.annual_revenue}"
 end
@@ -40,6 +41,7 @@ end
 @womens_stores = Store.where("womens_apparel = true AND annual_revenue < 1000000")
 
 # outputs store name and annual_revenue
+puts "Stores that sell womens apparel"
 @womens_stores.each do |store|
   puts "#{store.name}, #{store.annual_revenue}"
 end
