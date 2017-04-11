@@ -12,7 +12,7 @@ puts "----------"
 @store1.employees.create(
   first_name: "Bob",
   last_name: "Wilson",
-  hourly_rate: "600"
+  hourly_rate: "40"
   )
 
 @store1.employees.create(
@@ -24,19 +24,19 @@ puts "----------"
 @store1.employees.create(
   first_name: "Sallay",
   last_name: "Simmons",
-  hourly_rate: "6000"
+  hourly_rate: "900"
   )
 
 @store2.employees.create(
   first_name: "Micky",
   last_name: "Rogh",
-  hourly_rate: "6"
+  hourly_rate: "39"
   )
 
 @store2.employees.create(
   first_name: "Mack",
   last_name: "Michales",
-  hourly_rate: "0.60"
+  hourly_rate: "200"
   )
 
 # outputs number of employees
