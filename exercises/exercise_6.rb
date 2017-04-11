@@ -39,4 +39,5 @@ puts "----------"
   hourly_rate: "0.60"
   )
 
+# outputs number of employees
 puts Employee.count
