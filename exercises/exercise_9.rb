@@ -13,6 +13,10 @@ require_relative './exercise_8'
 puts "\nExercise 9 (Stretch)"
 puts "----------"
 
+puts "These are the employees and stores to start"
+pp Employee.all
+pp Store.all
+
 # Make sure empty stores can be destroyed
 @empty_store = Store.create!(name: 'Test Empty Store', annual_revenue: 0)
 if @empty_store.destroy
@@ -27,3 +31,6 @@ puts "There are now #{Store.count} stores left"
 
 @store2.destroy
 puts "There are now #{Store.count} stores left"
+
+puts "\n These are the stores left"
+pp Store.all
