@@ -11,7 +11,7 @@ class Store < ActiveRecord::Base
   private
     def can_destroy?
       puts "\nThis store has #{self.employees.where.not(id: nil).count} employee(s)"
-      if self.employees.where.not(id: nil).count != 0
+      if self.employees.where.not(id: nil).count > 0 # self.employees.map(!&:persisted?).any?  is another way of doing it
         errors[:base] << "Cannot delete a store that has employees"
         throw :abort
       end
